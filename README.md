@@ -9,4 +9,6 @@ Remove content button orchardcore plugin
 dotnet add package YuSheng.OrchardCore.Cms.Extension --version 1.1.0
 ```
 
+![remove_button](remove_button.png)
+
 
