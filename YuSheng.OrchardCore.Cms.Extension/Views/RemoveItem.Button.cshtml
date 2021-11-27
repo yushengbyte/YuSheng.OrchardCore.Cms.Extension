@@ -1,0 +1,24 @@
+
+@{
+    var returnUrl = Context.Request.Query["returnUrl"];
+    var contentItemIdTemp = Url.Action("RemoveItem", "Admin", new
+    {
+        area = "YuSheng.OrchardCore.Cms.Extension",
+        contentItemId = Model.ContentItem.ContentItemId,
+        returnUrl = returnUrl
+    });
+}
+
+<a class="btn btn-danger btn-sm"
+   id="button-remove"
+   href="@contentItemIdTemp">
+    @T["Remove"]
+</a>
+
+
+<style>
+    #button-remove {
+        padding: 0.48rem 0.5rem;
+        border: 1px solid transparent;
+    }
+</style>
