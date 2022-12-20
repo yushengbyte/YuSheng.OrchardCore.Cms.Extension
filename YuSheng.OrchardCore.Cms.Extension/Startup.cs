@@ -1,14 +1,13 @@
-using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.DependencyInjection;
-
 using OrchardCore.ContentManagement.Display.ContentDisplay;
 using OrchardCore.Liquid;
+using OrchardCore.Modules;
 using YuSheng.OrchardCore.Cms.Extension.Drivers;
 using YuSheng.OrchardCore.Cms.Extension.Liquid;
 
-namespace OrchardCore.ContentPreview
+namespace YuSheng.OrchardCore.Cms.Extension
 {
-    public class Startup : Modules.StartupBase
+    public class Startup : StartupBase
     {
         public override void ConfigureServices(IServiceCollection services)
         {

@@ -1,16 +1,16 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
-    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <TargetFramework>net6.0</TargetFramework>
     <AddRazorSupportForMvc>true</AddRazorSupportForMvc>
     <!-- NuGet properties-->
     <Title>OrchardCore ContentPreview</Title>
     <Description>
-      Provides live content editing and content preview.
+      Remove item in content edit page.
     </Description>
     <PackageTags> OrchardCoreCMS,yusheng,cms</PackageTags>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.1.0</Version>
+    <Version>1.2.0</Version>
     <Authors>spike</Authors>
     <Company>spike</Company>
     <Copyright>spike 2021</Copyright>
@@ -18,7 +18,7 @@
     <PackageIcon>horse-face-front-view-sketch.png</PackageIcon>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <RepositoryUrl>https://github.com/SpikeXy/YuSheng.OrchardCore.Cms.Extension</RepositoryUrl>
-    <AssemblyVersion>1.1.0</AssemblyVersion>
+    <AssemblyVersion>1.2.0</AssemblyVersion>
   </PropertyGroup>
 
   <ItemGroup>
@@ -36,10 +36,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="OrchardCore.Abstractions" Version="1.1.0" />
-    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.1.0" />
-    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.1.0" />
-    <PackageReference Include="OrchardCore.Module.Targets" Version="1.1.0" />
+    <PackageReference Include="OrchardCore.Abstractions" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.ContentManagement.Abstractions" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.ContentManagement.Display" Version="1.5.0" />
+    <PackageReference Include="OrchardCore.Module.Targets" Version="1.5.0" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Controllers\" />
   </ItemGroup>
 
 
